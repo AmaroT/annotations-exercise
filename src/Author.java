@@ -1,12 +1,14 @@
-/**
- * This source file is subject to the license that is bundled with this package in the file LICENSE.
+
+/*
+ This source file is subject to the license that is bundled with this package in the file LICENSE.
  */
+
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings({"unchecked", "rawtypes", "all"})
 public class Author extends Person {
     private List books;
-
     public Author(String firstName, String lastName) {
         super(firstName, lastName);
         books = new ArrayList();
@@ -19,7 +21,7 @@ public class Author extends Person {
     public List<String> getBooks() {
         return books;
     }
-
+@SuppressWarnings("unused")
     public List<String> publishedBooks() {
         return books;
     }
