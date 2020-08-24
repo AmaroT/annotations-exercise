@@ -1,4 +1,7 @@
 public class Main {
+    private static Object lastName;
+    private static Object firstName;
+
     @SuppressWarnings("all")
     public static void main(String[] args) {
         Author author = new Author("Sandi", "Metz");
@@ -7,5 +10,10 @@ public class Main {
         for (String book: author.getBooks()) {
             System.out.println(book);
         }
+
+    }
+    public static <lastName, firstName> Object fullName(lastName, firstName) {
+        return String.format("%s, %s", lastName, firstName);
+
     }
 }
